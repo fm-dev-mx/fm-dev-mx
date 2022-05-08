@@ -1,0 +1,32 @@
+﻿@font-face {
+    font-family: 'BebasNeue-Book';
+    src: url('./assets/Fonts/BebasNeue/BebasNeue-Book.ttf') format('truetype');
+   }
+@font-face {
+    font-family: 'BebasNeue-Bold';
+    src: url('./assets/Fonts/BebasNeue/BebasNeue-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BebasNeue-Thin';
+    src: url('./assets/Fonts/BebasNeue/BebasNeue-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BebasNeue-Light';
+    src: url('./assets/Fonts/BebasNeue/BebasNeue-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('./assets/Fonts/BebasNeue/BebasNeue-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oxygen-Bold';
+    src: url('./assets/Fonts/Oxygen/Oxygen-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oxygen-Light';
+    src: url('./assets/Fonts/Oxygen/Oxygen-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oxygen-Regular';
+    src: url('./assets/Fonts/Oxygen/Oxygen-Regular.ttf') format('truetype');
+}
