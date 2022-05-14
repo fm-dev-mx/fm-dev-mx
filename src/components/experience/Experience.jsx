@@ -5,6 +5,20 @@ import {DiJavascript1} from 'react-icons/di'
 import {IoLogoNodejs, IoLogoPython} from 'react-icons/io'
 import {FaCss3Alt, FaHtml5, FaBootstrap, FaReact, FaPhp} from 'react-icons/fa'
 
+const Experience = params => {
+  return (
+    <article className="experience__details">
+      <div className="ico">
+        {params.experience_ico}
+      </div>
+      <div>
+        <h4>{params.experience_name}</h4>
+        <small>{params.experience_level}</small>
+      </div>
+    </article>
+  );
+};
+
 const experience = () => {
   return (
     <section id="experience">
@@ -15,15 +29,8 @@ const experience = () => {
         <div className="experience__frontend">
           <h3>Fronted Development</h3>
           <div className="experience__content">
-            <article className="experience__details">
-              <div className="ico">
-                <FaHtml5 />
-              </div>
-              <div>
-                <h4>HTML</h4>
-                <small>Experienced</small>
-              </div>
-            </article>
+            <Experience experience_ico='<FaHtml5 />' experience_name='HTML' experience_level=''></Experience>
+
             <article className="experience__details">
               <div className="ico">
                 <FaCss3Alt />
