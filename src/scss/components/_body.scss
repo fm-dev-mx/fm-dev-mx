@@ -1,0 +1,32 @@
+﻿@use '../abstracts/' as *;
+
+body{
+    @include textMixin ( $fs-medium, $font-secondary-100, left , $line-height-small, $letter-space-small, $color-drkgrn-white );
+    background: $color-drkgrn-bg;
+    background-image: url(../src/assets/bg/low-contrast-linen.png);
+}
+
+section{
+    @include flexMixin( flex , column , nowrap , center , center );
+    margin-top: 6rem;
+}
+
+h1{
+    @include textMixin ( $fs-xl, $font-tertiary, center , $line-height-large, $letter-space-small, $color-drkgrn-primary, $margin-large 0rem 0rem 0rem);
+}
+h2{
+    @include textMixin ( $fs-large, $font-primary, center , $line-height-medium, $letter-space-large, $color-drkgrn-gray, $margin-medium 0rem 0rem 0rem);
+}
+h3{
+    @include textMixin ( $fs-medium, $font-primary, center , $line-height-medium, $letter-space-medium, $color-drkgrn-gray-light, $margin-small 0rem 0rem 0rem);
+}
+h4{
+    @include textMixin ( $fs-small, $font-primary, center , $line-height-small, $letter-space-medium, $color-drkgrn-gray, $margin-xs 0rem 0rem 0rem);
+}
+h5{
+    @include textMixin ( $fs-xs, $font-primary, center , $line-height-small, $letter-space-small, $color-drkgrn-gray,$margin-xs 0rem 0rem 0rem);
+}
+
+p{
+    @include textMixin ( $fs-medium, $font-secondary, justify , $line-height-medium, $letter-space-medium, $color-drkgrn-white, $margin-large 0rem 0rem 0rem);
+}

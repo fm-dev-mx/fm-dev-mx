@@ -1,0 +1,112 @@
+﻿$color-drkgrn-bg: #212426;
+$color-drkgrn-bg-variant: #acbe43;
+$color-drkgrn-primary: #93BF34;
+$color-drkgrn-primary-variant: #688C32;
+$color-drkgrn-white: #fff;
+$color-drkgrn-gray: rgb(120, 120, 120);
+$color-drkgrn-gray-light: rgb(220, 220, 220);
+$color-drkgrn-gray-dark: rgb(22, 22, 22);
+$color-drkgrn-light:#515559;
+$color-drkgrn-yellow: #d8cd6a;
+
+$font-primary: 'Raleway', sans-serif;
+$font-secondary: 'Nunito', sans-serif;
+$font-tertiary: 'Roboto Mono', monospace;
+$font-primary-500: 'BebasNeue-Bold';
+$font-primary-400: 'BebasNeue-Regular';
+$font-primary-300: 'BebasNeue-Book';
+$font-primary-200: 'BebasNeue-Light';
+$font-primary-100: 'BebasNeue-Thin';
+$font-secondary-500: 'Oxygen-Bold';
+$font-secondary-300: 'Oxygen-Regular';
+$font-secondary-100: 'Oxygen-Light';
+
+$fs-xxl: 5rem;
+$fs-xl: 4rem;
+$fs-large: 3rem;
+$fs-medium: 2.5rem;
+$fs-small: 2rem;
+$fs-xs: 1.5rem;
+$fs-xxs: 1.2rem;
+$fs-xxxs: 0.8rem;
+
+$line-height-xl: 6rem;
+$line-height-large: 5rem;
+$line-height-medium: 4rem;
+$line-height-small: 3rem;
+$line-height-xs: 2.5rem;
+
+$letter-space-xl: 0.06rem;
+$letter-space-large: 0.05rem;
+$letter-space-medium: 0.04rem;
+$letter-space-small: 0.03rem;
+$letter-space-xs: 0.02rem;
+$letter-space-xxs: 0.01rem;
+
+$transition: all 400ms ease;
+$transition2: box-shadow .3s ease, color .3s ease;
+$transition3: opacity 1 'fade:hover' opacity 5;
+
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-ms: 90%;
+
+$margin-xl: 5rem;
+$margin-large: 4rem;
+$margin-medium: 3rem;
+$margin-small: 2rem;
+$margin-xs: 1rem;
+
+$button-margin: 0.6rem;
+$button-padding: 0.3rem 1.0rem;
+$button-radius: 0.6rem;
+$button-color: $color-drkgrn-white;
+$button-border: 1px solid $color-drkgrn-light;
+$button-flex: 0 0 10rem;
+$button-width: 17rem;
+$button-text-size: $fs-xxs;
+$button-text-align: center;
+$button-text-weight: 300;
+$button-letter-space: $letter-space-xs;
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+}
+@font-face {
+    font-family: 'BebasNeue-Book';
+    src: url('../../assets/Fonts/BebasNeue/BebasNeue-Book.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    src: url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+}
+@font-face {
+    font-family: 'BebasNeue-Bold';
+    src: url('../../assets/Fonts/BebasNeue/BebasNeue-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BebasNeue-Thin';
+    src: url('../../assets/Fonts/BebasNeue/BebasNeue-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BebasNeue-Light';
+    src: url('../../assets/Fonts/BebasNeue/BebasNeue-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'BebasNeue-Regular';
+    src: url('../../assets/Fonts/BebasNeue/BebasNeue-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oxygen-Bold';
+    src: url('../../assets/Fonts/Oxygen/Oxygen-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oxygen-Light';
+    src: url('../../assets/Fonts/Oxygen/Oxygen-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Oxygen-Regular';
+    src: url('../../assets/Fonts/Oxygen/Oxygen-Regular.ttf') format('truetype');
+}

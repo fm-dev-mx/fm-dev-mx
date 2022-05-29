@@ -1,0 +1,125 @@
+
+:root{
+  --color-primario: #181818;
+  --color-secundario: #f0f0f0;
+
+  --tipo-principal   : Helvetica, Arial, sans-serif;
+  --tipo-secundaria  : Verdana;
+}
+/*
+@media (prefers-color-scheme: dark) {
+  :root{
+    --color-primario: #f0f0f0;
+  --color-secundario: #181818;
+  }
+}
+
+@media (prefers-contrast: high){
+    :root{
+      --color-primario: black;
+      --color-secundario: white;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img , picture , video , iframe , figure{
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color:inherit;
+  font-size:inherit;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+h1 , h2 , h3 , h4 , h5 , h6 , p ,span , a , strong , blockquote , i , b , u , em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  //text-decoration: none;
+  color:inherit;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form , input, textarea, select , button , label{
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens:auto;
+    hyphens: auto;
+    background-color: transparent;
+    color:inherit;
+    display: block;
+    appearance: none;
+}
+
+table , tr , td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+svg, img{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+p svg, p img{
+  display: inline;
+  width: initial;
+}
+
+body {
+  min-height  : 100vh;
+  font-size   : 100%;
+  font-family : var(--tipo-principal);
+  color       : var(--negro);
+  line-height: 1.4em;
+  -webkit-hyphens: auto;
+  hyphens: none;
+  -webkit-font-smoothing: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,161 @@
+﻿.about__img-text-row{
+    display: flex;
+    justify-content: center;
+}
+
+.about__img-btn-col{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    gap: 2rem;
+}
+
+.about__img-full{
+    min-width: 20rem;
+}
+
+.about__me-image-frame{
+    background: var(--color-drkgrn-primary);
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.about__me-image{
+    border-radius: 5rem;
+    overflow: hidden;
+    transform: rotate(1deg);
+    transition: var(--transition);
+}
+
+.about__me-image:hover{
+    transform: rotate(-4deg);
+}
+
+.about__parrapah-cards-col{
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about__parraph{
+    text-align: justify;
+    margin-left: 2rem;
+}
+
+.about__cards{
+    display: flex;
+    justify-content:space-between;
+    margin: 1rem 1rem 1rem 5%;
+    gap: 1%;
+}
+
+.about__card{
+    margin: 1rem;
+    background: var(--color-drkgrn-bg-variant);
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+    flex-basis: 12rem;
+}
+
+.about__card:hover{
+    background: transparent;
+    border-color: var(--color-drkgrn-primary-variant );
+    cursor: default;
+}
+
+.about__icon{
+    font-size: 3rem;
+}
+
+.about__btn > .btn{
+    display: flex;
+    max-width: 12rem;
+}
+
+
+/* ============  MEDIA QUERIES (MEDIUM DEVICES) ==============*/
+@media screen and (max-width: 1024px) {
+
+    .about__img-text-row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__img-full{
+        max-width:60%;
+    }
+
+    .about__parraph{
+        text-align: justify;
+        max-width: 90%;
+        margin: 0;
+    }
+
+    .about__cards{
+        justify-content: space-between;
+        margin: 1rem 2rem 1rem 2rem;
+        gap: 1rem;
+    }
+
+    .about__card{
+        margin: 0;
+        flex: 9rem 7rem 1;
+    }
+
+    .about__card > h5{
+        font-size: 1.5rem;
+    }
+
+    .about__icon{
+        font-size: 2.5rem;
+    }
+}
+
+/* ============  MEDIA QUERIES (SMALL DEVICES) ==============*/
+@media screen and (max-width: 600px) {
+
+    .about__img-text-row{
+        justify-content: center;
+    }
+
+    .about__img-full{
+        min-width: 5rem;
+        max-width: 18rem;
+    }
+
+    .about__parraph{
+        max-width: 90%;
+    }
+
+    .about__cards{
+        margin: 1rem 0 1rem 0;
+        row-gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__card{
+        margin: 0;
+        padding: 0.5rem 0rem 0rem 0rem;
+        width: 80%;
+        flex: 7rem 5rem 0;
+
+    }
+
+    .about__card > h5{
+        font-size: 1.2rem;
+    }
+
+    .about__icon{
+        font-size: 2rem;
+    }
+
+
+
+}

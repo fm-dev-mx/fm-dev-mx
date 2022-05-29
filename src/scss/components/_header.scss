@@ -1,0 +1,117 @@
+﻿@use '../abstracts/' as *;
+
+header{
+    margin-top: 3rem;
+    height: 100vh;
+    @include flexMixin( flex , row , nowrap , center , flex-start );
+    .language{
+        width: 75px;
+        @include flexMixin( 'flex' ,'row' , 'no-wrap', 'space-between', "center" );
+        &__flags{
+            width: 30px;
+            img{
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+    h1{
+        font-size: $fs-xxl;
+        margin-top: .3rem;
+        letter-spacing: $letter-space-xs;
+    }
+    h2{
+        margin-top: $margin-small;
+        font-size: $fs-medium;
+        line-height: $line-height-small;
+    }
+    h4{
+        font-size: $fs-xs;
+        margin-top: 0rem;
+    }
+    .header{
+        @include flexMixin( flex , column , nowrap , center , center );
+
+        picture{
+            background: linear-gradient(transparent, $color-drkgrn-primary);
+            max-width: 30em;
+            margin-top: .5rem;
+            border-radius: 14rem 6rem 14rem 6rem;
+            img{
+                @include imgMixin(flex, relative, 20rem);
+            }
+        }
+
+        &__button{
+            @include flexMixin(flex, row, nowrap, center, center);
+        }
+        &__socials{
+            row-gap: 3rem;
+            font-size: 1.8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            left: 2rem;
+            justify-content:flex-start;
+            a:hover{
+                color: $color-drkgrn-yellow;
+            }
+            &__arrow{
+                color: $color-drkgrn-light;
+            }
+        }
+        &__scrollDown{
+            position: absolute;
+            right: -2.3rem;
+            bottom: 5rem;
+            transform: rotate(90deg);
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+        &__same__line{
+            @include textMixin ( $fs-xs, $font-secondary, center , $line-height-xs, $letter-space-medium, $color-drkgrn-gray, $margin-large 0 0 0 );
+            white-space: nowrap;
+            text-shadow: .3px .3px;
+            &__icon{
+                @include textMixin ( $fs-xxxs, $font-secondary, justify , $line-height-medium, $letter-space-medium, $color-drkgrn-gray );
+            }:hover{
+                color: #fff;
+            }
+        }
+    }
+
+
+#yomero{
+    color: $color-drkgrn-gray-light;
+}
+
+#frondev{
+    text-decoration: underline dotted;
+    text-decoration-color: $color-drkgrn-gray-light;
+    text-decoration-thickness: .09rem;
+    text-underline-offset: .3rem;
+}
+
+picture{
+    @include imgMixin;
+}
+
+.buttonMixim__primary {
+
+// $bgColor: $borderSize: $textColor: $borderColor:  $transition )
+@include buttonMixin( $color-drkgrn-primary-variant, 1px solid, $color-drkgrn-white,$color-drkgrn-light, transparent);
+
+&:hover{
+    @include buttonMixin($color-drkgrn-primary, 0px, $color-drkgrn-white,$color-drkgrn-primary,transparent);
+    }
+}
+
+.buttonMixim__secondary {
+	@include buttonMixin( $color-drkgrn-bg, 2px, $color-drkgrn-primary,$color-drkgrn-primary);
+
+	&:hover{
+        @include buttonMixin($color-drkgrn-light, 0px, $color-drkgrn-primary, transparent, $transition3);
+    }
+}
+}

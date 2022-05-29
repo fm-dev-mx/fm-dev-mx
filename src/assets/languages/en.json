@@ -1,0 +1,92 @@
+﻿{
+	"@context": "https://schema.org",
+	"@type": "Article",
+	"name": "x y z",
+	"url": "Website",
+	"mainEntityOfPage": {
+		"@type": "WebPage",
+		"@id": "Website"
+	},
+	"headline": "My Name",
+	"keywords": "Keywords",
+	"description": "Description",
+	"articleBody": "Body",
+	"image": {
+		"@type": "ImageObject",
+		"url": "/img/private/Bonjour.jpg",
+		"width": "517",
+		"height": "517"
+	},
+	"author": {
+		"@type": "Person",
+		"name": "x y z",
+		"email": "x@gmail.com"
+	},
+	"datePublished": "2021-06-12",
+	"dateModified": "2021-08-05",
+	"about": {
+		"@type": "Person",
+		"email": "x@gmail.com",
+		"name": "x y z",
+		"alternateName": "alternate name",
+		"givenName": "x",
+		"familyName": "y",
+		"additionalName": "z",
+		"owns": [
+			{
+				"@type": "Website",
+				"url": "Website"
+			}
+		],
+		"nationality": "Bangladeshi",
+		"jobTitle": "Student",
+		"birthDate": "2004-09-09",
+		"weight": "60",
+		"height": "70",
+		"gender": "Male",
+		"knowsLanguage": ["en", "en-US", "bn", "hi"],
+		"description": "Description.",
+		"alumniOf": [
+			{
+				"@type": "Organization",
+				"name": "x Elementary School",
+				"sameAs": "Schools Site"
+			}
+		],
+		"image": [
+			{
+				"@type": "ImageObject",
+				"url": "/img/private/Bonjour.jpg",
+				"width": "517",
+				"height": "517"
+			},
+			{
+				"@type": "ImageObject",
+				"url": "/img/private/Devil.jpg",
+				"width": "1138",
+				"height": "1138"
+			},
+			{
+				"@type": "ImageObject",
+				"url": "/img/private/Rooftop-Candid.jpg",
+				"width": "408",
+				"height": "408"
+			}
+		],
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "My City",
+			"postalCode": "4000",
+			"addressCountry": "Country"
+		},
+		"birthPlace": {
+			"@type": "Place",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "City",
+				"postalCode": "4000",
+				"addressCountry": "Country"
+			}
+		}
+	}
+}

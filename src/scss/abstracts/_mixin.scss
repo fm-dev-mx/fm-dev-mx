@@ -1,0 +1,63 @@
+﻿@use './values' as *;
+
+@mixin flexMixin( $dis: 'flex' , $direction: 'row' , $corte: 'wrap', $just: 'center' , $align: "center" ){
+    display         : $dis;
+    flex-flow       : $direction $corte;
+    justify-content : $just;
+    align-items     : $align;
+}
+/*
+main{
+    @include flex( flex , row , nowrap , center , center );
+}
+section{
+    @include flex( flex , column , nowrap , flex-start , flex-start );
+}
+*/
+
+//=======================================================================//
+
+@mixin textMixin( $fontSize: $fs-medium, $fontFamily: $font-primary-400, $textAlign: 'center', $lineHeight: $line-height-small, $letterSpacing: $letter-space-medium, $textColor: $color-drkgrn-gray-light, $margin: 0rem){
+
+    font-size: $fontSize;
+    font-family: $fontFamily;
+    text-align: $textAlign;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+    color: $textColor;
+    margin: $margin;
+}
+/*
+p{
+    @include nombre( black , bold , 2em );
+}*/
+
+@mixin buttonMixin ( $bgColor: $color-drkgrn-primary-variant, $borderSize: 1px solid, $textColor: $color-drkgrn-white, $borderColor: transparent, $trans: $transition ){
+
+    border-color: $borderColor;
+    border: $borderSize;
+    color: $textColor;
+    background-color: $bgColor;
+
+    width: $button-width;
+    padding: $button-padding;
+    margin: $button-margin;
+
+    border-radius: $button-radius;
+    border: $button-border;
+    cursor: pointer;
+
+    font-size: $button-text-size;
+    text-align: $button-text-align;
+    font-weight: $button-text-weight;
+    letter-spacing: $button-letter-space;
+
+    flex: $button-flex;
+    transition: $trans;
+}
+
+@mixin imgMixin ($display: flex, $position: relative, $width: 500px ){
+    display: $display;
+    position: $position;
+    max-width: $width;
+}
